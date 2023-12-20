@@ -1,0 +1,1 @@
+{"version":3,"file":"tools.js","sources":["../src/tools/cube.ts","../src/tools/square.ts"],"sourcesContent":["export const cube = (num: number): number => {\n  return num * num * num;\n};\n","export const square = (num: number): number => {\n  return num * num;\n};\n"],"names":["num"],"mappings":"iDAAqBA,GACZA,EAAMA,EAAMA,WCDEA,GACdA,EAAMA"}
