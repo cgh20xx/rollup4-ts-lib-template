@@ -6,4 +6,10 @@ const cube = (num) => {
     return num * num * num;
 };
 
-export { cube, square };
+const PI2 = 3.1415926 * 2;
+
+const circle = (r) => {
+    return PI2 * r;
+};
+
+export { circle, cube, square };

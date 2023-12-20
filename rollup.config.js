@@ -14,17 +14,6 @@ const config = {
       format: 'es', // ES Mdoule
     },
     {
-      dir: 'dist',
-      entryFileNames: '[name].cjs.js',
-      format: 'cjs', // CommonJs
-    },
-    {
-      name: 'tools', // global name under window
-      dir: 'dist',
-      entryFileNames: '[name].umd.js',
-      format: 'umd', // 同時支援 amd、cjs、iife
-    },
-    {
       name: 'tools', // global name under window
       dir: 'dist',
       entryFileNames: '[name].js',
