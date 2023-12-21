@@ -11,14 +11,14 @@ import json from '@rollup/plugin-json';
 
 export default defineConfig({
   input: {
-    tools: 'src/index.ts',
+    tools: 'src/index.ts'
   },
   // 必需 (可以是陣列，用於描述多個輸出)
   output: [
     {
       dir: 'dist',
       entryFileNames: '[name].esm.js',
-      format: 'es', // ES Module
+      format: 'es' // ES Module
     },
     {
       name: 'tools', // global name under window
@@ -26,14 +26,14 @@ export default defineConfig({
       entryFileNames: '[name].js',
       format: 'iife', // for browser
       plugins: [terser()], // compress js
-      sourcemap: true,
-    },
+      sourcemap: true
+    }
   ],
   plugins: [
     typescript(),
     resolve(), // 使 Rollup 能解析 node_modules 模組
     commonjs(), // 使 Rollup 能將 CommonJS Module 轉換成 ES Module
-    json(), // 使 Rollup 能解析 json
-  ],
+    json() // 使 Rollup 能解析 json
+  ]
   // external: ['lodash-es'], // 外部模組不會被打包，需額外設定 output.globals
 });
