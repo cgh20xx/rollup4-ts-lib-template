@@ -1,9 +1,10 @@
+import { defineConfig } from 'rollup';
 import typescript from '@rollup/plugin-typescript';
 import terser from '@rollup/plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 
-const config = {
+export default defineConfig({
   input: {
     tools: 'src/index.ts',
   },
@@ -28,6 +29,4 @@ const config = {
     commonjs(), // 使 Rollup 能將 CommonJS Module 轉換成 ES Module
   ],
   // external: ['lodash-es'], // 外部模組不會被打包，需額外設定 output.globals
-};
-
-export default config;
+});
