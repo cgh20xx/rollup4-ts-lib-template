@@ -1,3 +1,5 @@
+var version = "1.0.0";
+
 const square = (num) => {
     return num * num;
 };
@@ -12,4 +14,4 @@ const circle = (r) => {
     return PI2 * r;
 };
 
-export { circle, cube, square };
+export { circle, cube, square, version };

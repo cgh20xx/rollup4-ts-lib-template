@@ -18,7 +18,7 @@ export default defineConfig({
     {
       dir: 'dist',
       entryFileNames: '[name].esm.js',
-      format: 'es', // ES Mdoule
+      format: 'es', // ES Module
     },
     {
       name: 'tools', // global name under window
